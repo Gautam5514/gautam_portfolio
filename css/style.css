@@ -285,8 +285,8 @@ h3.my-profession{
     width: 80px;
     border-bottom: 10px solid var(--skin-color);
     border-right: 10px solid var(--skin-color);
-    right: -30px;
-    bottom: 180px;
+    right: 0px;
+    bottom: 118px;
 }
 .home-img::before{
     content: '';
@@ -295,13 +295,13 @@ h3.my-profession{
     width: 80px;
     border-top: 10px solid var(--skin-color);
     border-left: 10px solid var(--skin-color);
-    left: -20px;
+    left: 0px;
     top: -40px;
 }
 .home .home-img img{
-    margin: auto;
-    border-radius: 5px;
-    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    height: 350px;
 }
 /* About */
 .about .about-content{
