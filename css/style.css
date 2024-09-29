@@ -62,8 +62,8 @@ ul{
     
 }
 .section .container{
-    padding-top: 60px;
-    padding-bottom: 70px;
+    padding-top:10;
+    padding-bottom: 40px;
 }
 .section-title{
     flex: 0 0 100%;
@@ -274,19 +274,9 @@ h3.my-profession{
     flex: 0 0 40%;
     max-width: 40%;
     text-align: center;
-    
-    
     position: relative;
-}
-.home-img::after{
-    content: '';
-    position: absolute;
-    height: 80px;
-    width: 80px;
-    border-bottom: 10px solid var(--skin-color);
-    border-right: 10px solid var(--skin-color);
-    right: 0px;
-    bottom: 118px;
+    margin-top: 50px;
+    margin-left: 50px;
 }
 .home-img::before{
     content: '';
@@ -295,15 +285,31 @@ h3.my-profession{
     width: 80px;
     border-top: 10px solid var(--skin-color);
     border-left: 10px solid var(--skin-color);
-    left: 0px;
-    top: -40px;
+    left: 50px;
+    top: -30px;
 }
+
+.home-img::after{
+    content: '';
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-bottom: 10px solid var(--skin-color);
+    border-right: 10px solid var(--skin-color);
+    right: 50px;
+    bottom: 118px;
+}
+
+
 .home .home-img img{
     margin: 10px;
     border-radius: 10px;
     height: 350px;
 }
 /* About */
+.about{
+    margin-top: 0;
+}
 .about .about-content{
     flex: 0 0 100%;
     max-width: 100%;
@@ -659,11 +665,10 @@ h3.my-profession{
     .about .about-content .education,
     .home .home-info{
         flex: 0 0 100%;
-        max-width: 100;
+        max-width: 100%;
     }
-    .home .home-img{
-        display: none;
-    }
+    
+   
 }
 @media (max-width:767px){
     .contact .contact-form .col-6,
@@ -683,4 +688,68 @@ h3.my-profession{
     .main-content{
         margin-left: 0;
     }
+}
+
+@media (max-width:550px){
+  
+
+    .home-info h3{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 25px;
+    
+     }
+    .home-info p{
+       width: 100vw;
+       font-size: 13px;
+       width: 100%;
+       text-align: center;
+       margin-bottom: 30px;
+    }
+    .home-info a{
+         margin-left: 105px;
+    }
+    .row .home-img{
+        margin-top: 80px;
+        margin-left: 39px;
+       
+    }
+    .home-img::before {
+        content: '';
+        position: absolute;
+        left:-20px;
+        top: -20px;
+    }
+    .home-img::after {
+        content: '';
+        position: absolute;
+        left: 228px;
+        top: 310px;
+        
+    }
+    .about {
+       padding-top: 40px;
+       padding-bottom: 25px;
+    }
+    .section .container {
+         padding-bottom: 20px;
+         padding-top: 10px;
+     }
+     .section-title h2 {
+        font-size:37px;
+        
+    }
+    .about .about-content .about-text h3 {
+        font-size: 21px;
+       
+    }
+    .about .about-content .about-text p {
+        font-size: 14px;
+         
+    }
+    .buttons{
+        display: flex;
+    }
+  
+ 
 }
