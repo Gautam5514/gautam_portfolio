@@ -42,6 +42,9 @@ app.post('/api/contact', async (req, res) => {
         res.status(500).json({ message: 'Failed to save message', error });
     }
 });
+app.get("/api/dash",(req, res) => {
+    res.send("hey from the dashboard")
+})
 
 // Start the server
 const port = process.env.PORT || 2500;
