@@ -9,10 +9,11 @@ document.addEventListener('DOMContentLoaded', function() {
         const message = document.getElementById('message').value; // No # here
 
         // Send the form data to the backend API
-        const response = await fetch('http://localhost:2000/api/contact', {
+        const response = await fetch('https://gautam-portfolio-eight.vercel.app/api/contact', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
+
             },
             body: JSON.stringify({ name, email, subject, message })
         });
