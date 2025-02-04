@@ -3,10 +3,10 @@ document.addEventListener('DOMContentLoaded', function() {
         event.preventDefault(); // Prevent the default form submission
 
         // Collect form data
-        const name = document.getElementById('name').value; // No # here
-        const email = document.getElementById('email').value; // No # here
-        const subject = document.getElementById('subject').value; // No # here
-        const message = document.getElementById('message').value; // No # here
+        const name = document.getElementById('name').value; 
+        const email = document.getElementById('email').value; 
+        const subject = document.getElementById('subject').value; 
+        const message = document.getElementById('message').value; 
 
         // Send the form data to the backend API
         const response = await fetch('https://gautam-portfolio-eight.vercel.app/api/contact', {
@@ -21,12 +21,12 @@ document.addEventListener('DOMContentLoaded', function() {
         if (response.ok) {
             Toastify({
                 text: "Message sent successfully",
-                duration: 3000,  // Show toast for 3 seconds
+                duration: 1000,  
                 close: true,
-                gravity: "top", // `top` or `bottom`
-                position: "right", // `left`, `center` or `right`
+                gravity: "top", 
+                position: "right", 
                 backgroundColor: "green",
-                stopOnFocus: true,  // Prevents dismissing on hover
+                stopOnFocus: true,  
             }).showToast();
             setTimeout(() => {
                 window.location.reload();
@@ -35,12 +35,12 @@ document.addEventListener('DOMContentLoaded', function() {
             // Show error toast message
             Toastify({
                 text: "Failed to send message",
-                duration: 3000,  // Show toast for 3 seconds
+                duration: 1000,  
                 close: true,
-                gravity: "top", // `top` or `bottom`
-                position: "right", // `left`, `center` or `right`
+                gravity: "top", 
+                position: "right", 
                 backgroundColor: "red",
-                stopOnFocus: true,  // Prevents dismissing on hover
+                stopOnFocus: true,  
             }).showToast();
         }
     });
